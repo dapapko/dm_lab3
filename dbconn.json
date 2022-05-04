@@ -1,0 +1,22 @@
+{
+    "usernames": [
+        "postgres",
+        "postgres",
+        "dba123",
+        "usr456",
+        "sass",
+        "myaf",
+        "gh99",
+        "hello4"
+    ],
+    "users": [
+        "Driver={PostgreSQL Unicode};Server=localhost;Uid=postgres;Pwd=Varvash4;",
+        "Driver={PostgreSQL Unicode};Server=localhost;Database=lab3;Uid=postgres;Pwd=Varvash4;",
+        "Driver={PostgreSQL Unicode};Server=localhost;Database=lab3;Uid=dba123;Pwd=1234567;",
+        "Driver={PostgreSQL Unicode};Server=localhost;Database=lab3;Uid=usr456;Pwd=1234567;",
+        "Driver={PostgreSQL Unicode};Server=localhost;Database=lab3;Uid=sass;Pwd=sass;",
+        "Driver={PostgreSQL Unicode};Server=localhost;Database=lab3;Uid=myaf;Pwd=mayf;",
+        "Driver={PostgreSQL Unicode};Server=localhost;Database=lab3;Uid=gh99;Pwd=gh99;",
+        "Driver={PostgreSQL Unicode};Server=localhost;Database=lab3;Uid=hello4;Pwd=kitty;"
+    ]
+}

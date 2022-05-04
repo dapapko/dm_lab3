@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dm_lab3Class</class>
+ <widget class="QMainWindow" name="dm_lab3Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1116</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dm_lab3</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QToolButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>160</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameField">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="addressField">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>60</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="exemption">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>100</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>80</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exemption</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>0</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>130</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>130</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteButton">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>160</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createDBButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>190</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create DB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteDBButton">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>190</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete DB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="truncateButton">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>220</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Truncate table</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>250</y>
+      <width>361</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ID:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="idInput">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>270</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reconnectButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>220</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reconnect</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createUser">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>250</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create user</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>180</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>220</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>160</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>200</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="adminCheckbox">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>250</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Admin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="getAll">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>120</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Get all</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createProcs">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>90</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create procs</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1116</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="dm_lab3.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>searchButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>searchEntries()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>680</x>
+     <y>217</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>addEntries()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>680</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>updateEntry()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>760</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deleteButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>deleteEntry()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>760</x>
+     <y>217</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>truncateButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>truncateTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>760</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reconnectButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>reconnect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>697</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>555</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createDBButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>createDB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>717</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deleteDBButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>deleteDB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>797</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createUser</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>createUser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>927</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>getAll</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>getAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>927</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createProcs</sender>
+   <signal>clicked()</signal>
+   <receiver>dm_lab3Class</receiver>
+   <slot>createProcs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>927</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>searchEntries()</slot>
+  <slot>addEntries()</slot>
+  <slot>updateEntry()</slot>
+  <slot>deleteEntry()</slot>
+  <slot>truncateTable()</slot>
+  <slot>deleteDB()</slot>
+  <slot>createDB()</slot>
+  <slot>reconnect()</slot>
+  <slot>createUser()</slot>
+  <slot>getAll()</slot>
+  <slot>createProcs()</slot>
+ </slots>
+</ui>
